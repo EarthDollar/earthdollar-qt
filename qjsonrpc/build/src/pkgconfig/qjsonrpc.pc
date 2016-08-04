@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qjsonrpc
+
+
+Name: Qjsonrpc
+Description: Qjsonrpc Library
+Version: 1.1.0
+Libs: -lqjsonrpc 
+Libs.private: -lQt5Network -lQt5Core -lpthread   
+Cflags: -DQJSONRPC_SHARED -I${includedir}
+
